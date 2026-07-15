@@ -4,10 +4,9 @@ metadata:
   name: my-backend-service
 spec:
   selector:
-    app.kubernetes.io/name: my-backend
+    app: my-backend
   ports:
-    - protocol: http
-      name: http
+    - protocol: TCP
       port: 5173
       targetPort: 5173
   type: NodePort
